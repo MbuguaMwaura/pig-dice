@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+
+<body>
+<div class = "container">
+      <div class = "jumbotron">
+
+        <h2>Pig Dice</h2>
+
+      </div>
+
+      <div class = "row">
+        <div class = "col s6 m6" id="p-one">
+          <h3>Player One</h3>
+          <p id="p-one-score"></p>
+        </div>
+        <div class = "col s6 m6" id="p-two">
+          <h3>Player Two</h3>
+          <p id="p-two-score"></p>
+        </div>
+      </div>
+
+     <button id="p-one-btn" class="btn" onclick="myFunction()">Roll</button>
+     <button id="holdone" class="btn">Hold</button>
+     <button id="p-two-btn" class="btn red" onclick="myFunction2()">Roll</button>
+     <button id="p-two-btn" class="btn red" onclick="myFunction2()">Hold</button>
+     <div class="row">
+       <div class="col s6 m6">
+        <div class="tallyOne">
+          <p id="demo"></p>
+          <p id="demo2"></p>
+          <p id="total"></p>
+        </div>
+       </div>
+       <div class="col s6 m6">
+        <div class="tallyTwo">
+          <p id="demo3"></p>
+          <p id="demo4"></p>
+          <p id="total2"></p>
+        </div>
+       </div>
+    </div>
+  <p>Play One held</p> 
+  <p id = "p-one-held"></p>
+</div>
+
+</body>
+</html>
