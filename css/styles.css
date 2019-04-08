@@ -2,29 +2,87 @@
     background-color: teal;
     }
 #p-two{
-    background-color: lightgrey;
+    background-color: lightgray;
     }
-#p-two-btn{
-  float: right;
-}
-.tallyTwo{
-  float: right;
-}
+
+
 .playertwoturn{
-border: 2px solid red;
+border: 5px solid red;
+-moz-box-shadow:    inset 0 0 10px #000000;
+-webkit-box-shadow: inset 0 0 10px #000000;
+box-shadow:         inset 0 0 10px #000000;
 }
-#holdtwo{
-  float: right;
-}
+
 #right{
   float: right;
 }
 .jumbotron{
   background-image: url("../images/pig.jpg");
-  background-size: cover;
-  background-repeat: repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: 'Architects Daughter';
+  font-size: 80px;
+  color: white;
+  border: 4px solid teal;
+  background-color: #d9b2aa;
 }
 #playing{
   height: 300px;
+  text-align: center;
+}
+#p-one-score{
+  font-size: 60px;
+  font-family: 'Architects Daughter';
+  color: white;
+}
+#p-two-score{
+  font-size: 60px;
+  font-family: 'Architects Daughter';
+  color: white;
+}
+#buttons{
+  background-color: gray;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+}
+body{
+  background-color: #d9b2aa;
+}
+.game{
+  visibility: hidden;
+}
+.instructions{
+  text-align: center;
+  font-family: 'Architects Daughter';
+}
+ul{
+  font-size: 20px; 
+}
+h1{
+  border-bottom: 3px solid teal;
+}
+h2{
+  font-size: 80px;
+  padding: 5%;
+}
+.show{
+  visibility: visible;
+}
+#scores{
+  background-color: teal;
+  color: white;
+  padding: 2%;
+  font-family: 'Architects Daughter';
+  font-size: 20px;
+  text-align: center;
+}
+#tally{
+  background-color:lightgray;
+  color: black;
+  padding: 2%;
+  font-family: 'Architects Daughter';
+  font-size: 20px;
   text-align: center;
 }
