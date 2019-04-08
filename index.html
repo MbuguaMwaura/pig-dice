@@ -10,15 +10,32 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
 </head>
 
 <body>
+    
     <div class="container">
+           
         <div class="jumbotron">
 
             <h2>Pig Dice</h2>
 
         </div>
+        <div class="instructions">
+            <h1>Instructions</h1>
+            <ul>
+                <li>This is a two player game.</li>
+                <li>Each player gets a chance to roll the pair of dice.</li>
+                <li>The value of each dice is summed up temporarily.</li>
+                <li>When the player presses hold it saves the current held value into the score sheet.</li>
+                <li>If either player rolls a one on either die the current value is reduced to a zero.</li>
+                <li>The goal is to reach 100 on the score sheet before your opponent.</li>
+            </ul>
+        
+        <button class="waves-effect waves-light btn-large">Start Game</button>
+    </div>
+        <div class="game">
 
         <div class="row" id="playing">
             <div class="col s6 m6" id="p-one">
@@ -32,7 +49,7 @@
         </div>
 
 
-        <div class="row"> 
+        <div class="row" id="buttons"> 
             <div class="col s6 m6">
             <button id="p-one-btn" class="btn" onclick="myFunction()">Roll</button>
             <button id="holdone" class="btn">Hold</button>
@@ -73,6 +90,7 @@
             </div>
        </div>
     </div>
+</div>
 
 </body>
 
