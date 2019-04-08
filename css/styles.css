@@ -19,3 +19,12 @@ border: 2px solid red;
 #right{
   float: right;
 }
+.jumbotron{
+  background-image: url("../images/pig.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+}
+#playing{
+  height: 300px;
+  text-align: center;
+}
