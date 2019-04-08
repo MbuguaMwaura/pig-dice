@@ -32,7 +32,7 @@ function myFunction() {
         $("#p-one").removeClass("playertwoturn");
         playerone = [0];
 
-        document.getElementById("p-one-score").innerHTML = playeronescore;
+        document.getElementById("p-one-score").innerHTML = 0;
     }
 
 }
@@ -66,6 +66,10 @@ document.getElementById("holdone").addEventListener("click", function () {
     var final = playeroneheld.reduce(addscore);
     document.getElementById("p-one-held").innerHTML = final;
     $("#holdone").hide();
+    $("#p-two-btn").show();
+    $("#p-one-btn").hide();
+    $("#p-two").addClass("playertwoturn");
+    $("#p-one").removeClass("playertwoturn");
     document.getElementById("p-one-score").innerHTML = 0;
 });
 });
