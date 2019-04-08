@@ -59,3 +59,11 @@ function myFunction2() {
         $("#holdone").show();
     }
 }
+
+document.getElementById("holdone").addEventListener("click", function () {
+    playeroneheld.push(playeronescore);
+    var final = playeroneheld.reduce(addscore);
+    document.getElementById("p-one-held").innerHTML = final;
+    $("#holdone").hide();
+    document.getElementById("p-one-score").innerHTML = 0;
+});
