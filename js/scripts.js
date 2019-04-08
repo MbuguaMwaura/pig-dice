@@ -10,6 +10,7 @@ var playerone = [];
 var playertwo = [];
 var playeroneheld = [];
 var playertwoheld = [];
+var playertwoscore = 0;
 
 function myFunction() {
     var random = Math.floor((Math.random() * 6) + 1);
@@ -52,6 +53,7 @@ function myFunction2() {
         playertwo.push(result1);
         playertwoscore = playertwo.reduce(addscore);
         document.getElementById("p-two-score").innerHTML = playertwoscore;
+        
     } else if ((random === 1) || (random2 === 1)) {
 
         $("#p-one-btn").show();
@@ -77,6 +79,11 @@ document.getElementById("holdone").addEventListener("click", function () {
     $("#holdtwo").show();
     document.getElementById("p-one-score").innerHTML = 0;
     playerone = [];
+    playeronescore = 0;
+    if (final >= 100)
+    {
+        document.getElementById("p-one-score").innerHTML = "WINNER!!";
+    }
 });
 });
 $(document).ready(function(){
@@ -90,7 +97,13 @@ document.getElementById("holdtwo").addEventListener("click", function () {
     $("#p-one").addClass("playertwoturn");
     $("#p-two").removeClass("playertwoturn");
     $("#holdone").show();
-    document.getElementById("p-two-score").innerHTML = 0;
+    document.getElementById("p-two-score").innerHTML = 0; 
     playertwo = [];
+    playertwoscore = 0;
+    if (final >= 100)
+    {
+        document.getElementById("p-two-score").innerHTML = "WINNER!!";
+    }
+   
 });
 });
