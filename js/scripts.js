@@ -20,9 +20,10 @@ function myFunction() {
     document.getElementById("total").innerHTML = result;
 
     if ((random > 1) && (random2 > 1)) {
-
+        
         playerone.push(result);
         playeronescore = playerone.reduce(addscore);
+       
 
         document.getElementById("p-one-score").innerHTML = playeronescore;
 
@@ -33,8 +34,6 @@ function myFunction() {
         $("#p-one").removeClass("playertwoturn");
         $("#holdtwo").show();
         $("#holdone").hide();
-        playerone = [0];
-
         document.getElementById("p-one-score").innerHTML = 0;
     }
 
@@ -61,6 +60,7 @@ function myFunction2() {
         $("#p-two").removeClass("playertwoturn");
         $("#holdone").show();
         $("#holdtwo").hide();
+        document.getElementById("p-two-score").innerHTML = 0;
     }
 }
 
@@ -76,6 +76,7 @@ document.getElementById("holdone").addEventListener("click", function () {
     $("#p-one").removeClass("playertwoturn");
     $("#holdtwo").show();
     document.getElementById("p-one-score").innerHTML = 0;
+    playerone = [];
 });
 });
 $(document).ready(function(){
@@ -90,6 +91,6 @@ document.getElementById("holdtwo").addEventListener("click", function () {
     $("#p-two").removeClass("playertwoturn");
     $("#holdone").show();
     document.getElementById("p-two-score").innerHTML = 0;
-
+    playertwo = [];
 });
 });
