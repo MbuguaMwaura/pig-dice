@@ -60,10 +60,12 @@ function myFunction2() {
     }
 }
 
+$(document).ready(function(){
 document.getElementById("holdone").addEventListener("click", function () {
     playeroneheld.push(playeronescore);
     var final = playeroneheld.reduce(addscore);
     document.getElementById("p-one-held").innerHTML = final;
     $("#holdone").hide();
     document.getElementById("p-one-score").innerHTML = 0;
+});
 });
