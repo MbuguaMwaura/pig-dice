@@ -9,6 +9,7 @@ function addscore(accumulator, a) {
 var playerone = [];
 var playertwo = [];
 var playeroneheld = [];
+var playertwoheld = [];
 
 function myFunction() {
     var random = Math.floor((Math.random() * 6) + 1);
@@ -30,6 +31,8 @@ function myFunction() {
         $("#p-one-btn").hide();
         $("#p-two").addClass("playertwoturn");
         $("#p-one").removeClass("playertwoturn");
+        $("#holdtwo").show();
+        $("#holdone").hide();
         playerone = [0];
 
         document.getElementById("p-one-score").innerHTML = 0;
@@ -48,7 +51,7 @@ function myFunction2() {
     if ((random > 1) && (random2 > 1)) {
 
         playertwo.push(result1);
-        var playertwoscore = playertwo.reduce(addscore);
+        playertwoscore = playertwo.reduce(addscore);
         document.getElementById("p-two-score").innerHTML = playertwoscore;
     } else if ((random === 1) || (random2 === 1)) {
 
@@ -57,6 +60,7 @@ function myFunction2() {
         $("#p-one").addClass("playertwoturn");
         $("#p-two").removeClass("playertwoturn");
         $("#holdone").show();
+        $("#holdtwo").hide();
     }
 }
 
@@ -70,6 +74,22 @@ document.getElementById("holdone").addEventListener("click", function () {
     $("#p-one-btn").hide();
     $("#p-two").addClass("playertwoturn");
     $("#p-one").removeClass("playertwoturn");
+    $("#holdtwo").show();
     document.getElementById("p-one-score").innerHTML = 0;
+});
+});
+$(document).ready(function(){
+document.getElementById("holdtwo").addEventListener("click", function () {
+    playertwoheld.push(playertwoscore);
+    var final = playertwoheld.reduce(addscore);
+    document.getElementById("p-two-held").innerHTML = final;
+    $("#holdtwo").hide();
+    $("#p-one-btn").show();
+    $("#p-two-btn").hide();
+    $("#p-one").addClass("playertwoturn");
+    $("#p-two").removeClass("playertwoturn");
+    $("#holdone").show();
+    document.getElementById("p-two-score").innerHTML = 0;
+
 });
 });
