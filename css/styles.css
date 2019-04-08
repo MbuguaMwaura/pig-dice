@@ -13,3 +13,9 @@
 .playertwoturn{
 border: 2px solid red;
 }
+#holdtwo{
+  float: right;
+}
+#right{
+  float: right;
+}
