@@ -1,0 +1,15 @@
+#p-one{
+    background-color: teal;
+    }
+#p-two{
+    background-color: lightgrey;
+    }
+#p-two-btn{
+  float: right;
+}
+.tallyTwo{
+  float: right;
+}
+.playertwoturn{
+border: 2px solid red;
+}
