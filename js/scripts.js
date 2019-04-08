@@ -12,6 +12,12 @@ var playeroneheld = [];
 var playertwoheld = [];
 var playertwoscore = 0;
 
+$(document).click(function(){
+
+    $(".game").removeClass("game");
+    $(".instructions").hide();
+});
+
 function myFunction() {
     var random = Math.floor((Math.random() * 6) + 1);
     var random2 = Math.floor((Math.random() * 6) + 1);
