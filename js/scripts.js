@@ -22,9 +22,9 @@ function myFunction() {
     var random = Math.floor((Math.random() * 6) + 1);
     var random2 = Math.floor((Math.random() * 6) + 1);
     result = add(random, random2);
-    document.getElementById("demo").innerHTML = random;
-    document.getElementById("demo2").innerHTML = random2;
-    document.getElementById("total").innerHTML = result;
+    document.getElementById("demo").innerHTML = "DICE 1 : " +random;
+    document.getElementById("demo2").innerHTML = "DICE 2 : " +random2;
+    document.getElementById("total").innerHTML = "TOTAL : " +result;
 
     if ((random > 1) && (random2 > 1)) {
         
@@ -50,9 +50,9 @@ function myFunction2() {
     var random = Math.floor((Math.random() * 6) + 1);
     var random2 = Math.floor((Math.random() * 6) + 1);
     var result1 = add(random, random2);
-    document.getElementById("demo3").innerHTML = random;
-    document.getElementById("demo4").innerHTML = random2;
-    document.getElementById("total2").innerHTML = result1;
+    document.getElementById("demo3").innerHTML = "DICE 1 : " +random;
+    document.getElementById("demo4").innerHTML = "DICE 2 : " +random2;
+    document.getElementById("total2").innerHTML = "TOTAL : " +result1;
 
     if ((random > 1) && (random2 > 1)) {
 
